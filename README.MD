@@ -16,7 +16,7 @@ This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w26
 ## Main Notebooks
 | Model | Level| N. Records | Epochs | Notebook |
 | --- | --- | --- | --- | --- |
-| Baseline | First-Level | 5K| -|[baseline/mimic_icd9_baseline.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
+| Baseline | First-Level | 5K| -|[baseline/mimic_icd9_baseline.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) <br/> - Some Initial Exploration </br> - Basic Baseline Model: For the basic baseline, we make a fixed prediction corresponding to the top 4 ICD-9 codes for all records </br> - NN Baseline Model: A neural network (not Recurrent) with one hidden layer, with relu activation on the hidden layer and sigmoid activation on the output layer. Using cross entropy loss,which is the loss functions for multilabel classification (using Tensorflow)  |
 | LSTM | First-Level | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | LSTM with Attention| First-Level | 5K|5| [pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | CNN| First-Level | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
