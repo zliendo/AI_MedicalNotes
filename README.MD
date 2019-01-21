@@ -14,10 +14,10 @@ This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w26
 (note: code refactoring pending)
 
 ## Main Notebooks
-| Model | Level| N. Records | Epochs | Notebook |
+| Model | ICD 9 code level| N. Records | Epochs | Notebook |
 | --- | --- | --- | --- | --- |
 | Baseline | First-Level | 52.6K| -|[baseline/mimic_icd9_baseline.ipynb](baseline/mimic_icd9_baseline.ipynb) <br/> - Some Initial Exploration with Python and Sql </br> - Basic Baseline Model: For the basic baseline, we make a fixed prediction corresponding to the top 4 ICD-9 codes for all records </br> - NN Baseline Model: A neural network (not Recurrent) with one hidden layer, with relu activation on the hidden layer and sigmoid activation on the output layer. Using cross entropy loss,which is the loss functions for multilabel classification (using Tensorflow)  |
-| CNN Replication| First-Level IC9-codes </br> | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) </br>  Section: "CNN running with 20 epochs". CNN model to replicate results from paper: [https://arxiv.org/abs/1703.08705](Comparing Rule-Based and Deep Learning Models for Patient Phenotyping).In order to compare F1 performance results, I took into consideration the dataset size and number of classes.|
+| CNN Replication| First-Level  </br> | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) </br>  Section: "CNN running with 20 epochs". CNN model to replicate results from paper: [Comparing Rule-Based and Deep Learning Models for Patient Phenotyping](https://arxiv.org/abs/1703.08705).In order to compare F1 performance results, I took into consideration the dataset size and number of classes.|
 | LSTM | First-Level | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | LSTM with Attention| First-Level | 5K|5| [pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | CNN-ATT| First-Level | 5K| 5|[pipeline/icd9_cnn_att_workbook.ipynb](pipeline/icd9_cnn_att_workbook.ipynb)|
