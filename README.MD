@@ -16,7 +16,7 @@ This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w26
 ## Main Notebooks
 | Model | Level| N. Records | Epochs | Notebook |
 | --- | --- | --- | --- | --- |
-| Baseline | First-Level | 5K| -|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
+| Baseline | First-Level | 5K| -|[baseline/mimic_icd9_baseline.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | LSTM | First-Level | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | LSTM with Attention| First-Level | 5K|5| [pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
 | CNN| First-Level | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
