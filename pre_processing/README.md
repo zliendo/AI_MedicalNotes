@@ -2,6 +2,12 @@
 
 ## ICD9-codes
 
+
+ER database diagram of tables used in this project
+
+
+![database diagram of tables used in this project](MIMICERdiagram.png)
+
 The DIAGNOSES_ICD table contains the ICD9-codes assigned to a hospital admission. There could be many ICD9-codes assigned to one admission.
 There are 57,786 admissions in this table, with a total of 651,047 ICD9-codes assigned.
 
