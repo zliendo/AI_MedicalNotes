@@ -13,6 +13,9 @@ This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w26
 
 (note: code refactoring pending)
 
+## Preprocessing
+Getting information from database, pulling data, filtering and joining tables: [Pre processing](pre_processing)
+
 ## Main Notebooks
 
 ### Classification into top level codes in the ICD-9 hierarchy with 5K records
