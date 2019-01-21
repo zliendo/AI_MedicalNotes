@@ -22,10 +22,17 @@ This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w26
 | CNN Replication| First-Level  | 5K| 20|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) </br>  Section: "CNN running with 20 epochs". CNN model to replicate results from paper: [Comparing Rule-Based and Deep Learning Models for Patient Phenotyping](https://arxiv.org/abs/1703.08705).In order to compare F1 performance results, I took into consideration the dataset size and number of classes. F1-score= 76.2|  
 | CNN| Firs-Level| 5K | 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) </br> Section: "CNN running with 5 epochs" running with the 17 first level ICD-9 codes, using 5 epochs and Embeddings. F1-score= 69.1|
 | LSTM | First-Level | 5K| 5|[pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) </br>Section "Basic LSTM" running with the 17 first level ICD-9 codes, using 5 epochs and Embeddings. F1-score= 64.6 |
-| LSTM with Attention| First-Level | 5K|5| [pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
-| CNN-ATT| First-Level | 5K| 5|[pipeline/icd9_cnn_att_workbook.ipynb](pipeline/icd9_cnn_att_workbook.ipynb)|
-| Hierarchical LSTM Attention | First-level| 5k|5| [pipeline/icd9_hatt_workbook.ipynb](pipeline/icd9_hatt_workbook.ipynb)
-| CNN| First-Level | 5K| 20| [pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb)|
+
+**Attention**   
+The average length of discharge clinical notes is 1639 words. The text to classify may be too long for a LSTM or CNN to
+remember all relevant information. [Raffel et al. (2016)](https://arxiv.org/abs/1512.08756) displayed better performance in many NLP tasks on long text using Attention. Here, we seek to emulate his results by implementing algorithms based on the formulas presented in [Raffel et al. (2016)](https://arxiv.org/abs/1512.08756) and [Yang et al. (2016)](https://www.cs.cmu.edu/~hovy/papers/16HLT-hierarchical-attention-networks.pdf).   
+   
+| Model | ICD 9 code level| N. Records | Epochs | Notebook |
+| --- | --- | --- | --- | --- |
+| LSTM with Attention| First-Level | 5K|5| [pipeline/icd9_lstm_cnn_workbook.ipynb](pipeline/icd9_lstm_cnn_workbook.ipynb) </br> Section: "LSTM with Attention"</br> F1-score:67.0|
+| CNN with Attention| First-Level | 5K| 5|[pipeline/icd9_cnn_att_workbook.ipynb](pipeline/icd9_cnn_att_workbook.ipynb) </br>  F1-score:72.8|
+| Hierarchical LSTM Attention | First-level| 5k|5| [pipeline/icd9_hatt_workbook.ipynb](pipeline/icd9_hatt_workbook.ipynb)</br> This model was implemented based on [Yang et al. (2016)](https://www.cs.cmu.edu/~hovy/papers/16HLT-hierarchical-attention-networks.pdf) which specifically targets document classifications. It has two levels of attention mechanisms, the first one creates vectors that represent each sentence, using attention mechanism across words; and the second level creates a vector that represent the document using attention mechanisms across sentences. F1-score: 67.6|   
+
 
 ### Classification into most common level 5 ICD-9 Codes
 | Model | ICD 9 code level| N. Records | Epochs | Notebook |
