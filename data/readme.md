@@ -4,5 +4,5 @@ We are not including the MIMIC data here because it needs authorization from   h
 ER database diagram of tables used in this project
 
 
-![database diagram of tables used in this project](MIMIC ER diagram.png)
+![database diagram of tables used in this project]("MIMIC ER diagram.png")
 
