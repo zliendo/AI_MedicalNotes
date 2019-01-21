@@ -3,7 +3,7 @@ from keras.layers import Dense, Dropout, Flatten, Input,  Embedding,Bidirectiona
 from keras.layers.merge import Concatenate
 from keras.layers import LSTM
 
-
+# Author: Zenobia Liendo
 def build_lstm_model(input_seq_length, 
                          max_vocab, external_embeddings, embedding_trainable, embedding_dim, embedding_matrix,
                      training_dropout_keep_prob, num_classes):

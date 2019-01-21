@@ -1,4 +1,5 @@
 ###This file contains the functions reextracting the database only for the top ICD codes
+# Author: Zenobia Liendo
 
 import numpy as np
 import pandas as pd

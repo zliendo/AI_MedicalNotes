@@ -13,6 +13,7 @@ from keras import backend as K
 #
 # I did have to review closely the formulas presented on the papers about Attention to figure it out what type of
 # code will actually work
+# Author: Zenobia Liendo
 
 def attention_layer(inputs, TIME_STEPS,lstm_units, i='1'):
 

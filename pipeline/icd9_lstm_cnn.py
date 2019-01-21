@@ -28,6 +28,7 @@ import lstm_model
 import icd9_lstm_att_model
 
 
+# Author: Zenobia Liendo
 
 df = pd.read_csv('../data/disch_notes_all_icd9.csv',
                  names = ['HADM_ID', 'SUBJECT_ID', 'DATE', 'ICD9','TEXT'])

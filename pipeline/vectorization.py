@@ -1,5 +1,5 @@
 ### This file contains the functions necessary to vectorize the ICD labels and text inputs
-
+# Author: Guillaume De Roo
 import numpy as np
 import pandas as pd
 import re

@@ -1,4 +1,4 @@
-## from w266 materials
+## Code from w266 materials
 
 from IPython.display import display
 import itertools

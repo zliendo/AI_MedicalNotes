@@ -9,6 +9,8 @@ from keras.layers import merge, dot, add
 from keras import backend as K
 import attention_util
 
+# Author: Zenobia Liendo
+
 def build_lstm_att_model(input_seq_length, 
                          max_vocab, external_embeddings, embedding_trainable, embedding_dim, embedding_matrix,                         
                           training_dropout_keep_prob,num_classes):

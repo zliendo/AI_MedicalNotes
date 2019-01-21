@@ -5,6 +5,8 @@ from keras import regularizers
 import attention_util
 from keras import optimizers
 
+# Author: Zenobia Liendo
+
 ''' code based on:
 https://github.com/alexander-rakhlin/CNN-for-Sentence-Classification-in-Keras/blob/master/sentiment_cnn.py
 http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/

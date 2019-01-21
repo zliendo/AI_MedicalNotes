@@ -3,6 +3,8 @@ from keras.layers import Dense, Dropout, Flatten, Input, MaxPooling1D, Convoluti
 from keras.layers.merge import Concatenate
 from keras import regularizers
 
+# Author: Zenobia Liendo
+
 ''' code based on:
 https://github.com/alexander-rakhlin/CNN-for-Sentence-Classification-in-Keras/blob/master/sentiment_cnn.py
 http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/

@@ -1,4 +1,5 @@
 ### This contains helper functions
+# Author: Zenobia Liendo
 
 import numpy as np
 import pandas as pd

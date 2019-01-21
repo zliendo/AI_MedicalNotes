@@ -12,7 +12,8 @@ import attention_util
 # based on paper: Hierarchical Attention networks for document classification
 # starting code from:
 # * https://github.com/richliao/textClassifier/blob/master/textClassifierHATT.py
-# but the github sources above had misteakes in the attention layer that had been corrected here
+# but the github sources above had misteakes in the attention layer (IMO) that had been corrected here
+# Author: Zenobia Liendo
 
 def build_hierarhical_att_model(MAX_SENTS, MAX_SENT_LENGTH, embedding_matrix,
                          max_vocab, embedding_dim, 

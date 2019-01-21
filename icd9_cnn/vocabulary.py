@@ -1,4 +1,4 @@
-## from w266 material
+## Code from w266 class material
 import collections
 
 class Vocabulary(object):
