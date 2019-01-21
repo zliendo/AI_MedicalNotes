@@ -52,9 +52,18 @@ remember all relevant information. [Raffel et al. (2016)](https://arxiv.org/abs/
 
 | Model | Python module |
 | --- | --- |
-| LSTM | [pipeline/lstm_model.py]pipeline/lstm_model.py) |
+| LSTM | [pipeline/lstm_model.py](pipeline/lstm_model.py) |
 | CNN | [pipeline/icd9_cnn_model.py](pipeline/icd9_cnn_model.py)  |
 | Attention Layer |[pipeline/attention_util.py](pipeline/attention_util.py)  |
 | LSTM_ATT | [pipeline/icd9_lstm_att_model.py](pipeline/icd9_lstm_att_model.py)   |
 | CNN_ATT | [pipeline/icd9_cnn_att.py](pipeline/icd9_cnn_att.py)   |
 | Hierarchical LSTM Attention | [pipeline/hatt_model.py](pipeline/hatt_model.py)  |
+
+## Helper classes for Preprocessing
+
+| Helper | Python module |
+| --- | --- |
+| Filtering clinical-notes to keep the ones that have been assigned the top common N icd-9 codes (this is a multi-label),  removing any code from the label that is not in the top N | [pipeline/database_selection.py](pipeline/database_selection.py) |
+| Three main methods: (1) Splits input file in training, valiation and test  (2) Replace leaf icd9-code with its grandparent in the first level  (3) Calculates and Diplay F1 scores for a set of possible thresholds| [pipeline/helpers.py](pipeline/helpers.py) |
+| functions necessary to vectorize the ICD labels and text inputs 
+(I didn't implement this module)| [pipeline/vectorization.py](pipeline/vectorization.py) |
