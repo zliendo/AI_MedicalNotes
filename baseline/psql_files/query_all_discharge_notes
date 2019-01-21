@@ -1,0 +1,3 @@
+select HADM_ID, SUBJECT_ID , CHARTDATE , DESCRIPTION, regexp_replace(TEXT, E'[\\n\\r]+', ' ', 'g' ) 
+from noteevents  
+where category = 'Discharge summary'

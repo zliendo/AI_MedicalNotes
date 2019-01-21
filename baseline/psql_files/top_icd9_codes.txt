@@ -1,0 +1,27 @@
+ top 20 labels based on number of patients with that label 
+(not considering icd9 codes that start with "V" nor "E" because they refer to information that is not diagnosis)
+
+
+ icd9_code | icd9_q
+-----------+--------
+ 4019      |  17613
+ 41401     |  10775
+ 42731     |  10271
+ 4280      |   9843
+ 5849      |   7687
+ 2724      |   7465
+ 25000     |   7370
+ 51881     |   6719
+ 5990      |   5779
+ 2720      |   5335
+ 53081     |   5272
+ 2859      |   4993
+ 486       |   4423
+ 2851      |   4241
+ 2762      |   4177
+ 2449      |   3819
+ 496       |   3592
+ 99592     |   3560
+ 0389      |   3433
+ 5070      |   3396
+(20 rows)

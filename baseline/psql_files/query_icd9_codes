@@ -1,0 +1,4 @@
+select HADM_ID, max(SUBJECT_ID) SUBJECT_ID,  string_agg(ICD9_CODE, ' ') ICD9_CODES 
+from diagnoses_icd 
+where SUBSTRING(ICD9_CODE from 1 for 1) != 'V' and SUBSTRING(ICD9_CODE from 1 for 1) != 'E' 
+group by HADM_ID 

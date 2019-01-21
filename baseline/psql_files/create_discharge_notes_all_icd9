@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS W266_DISCHARGE_NOTE_ICD9_CODES_B;
+CREATE TABLE  W266_DISCHARGE_NOTE_ICD9_CODES_B  AS 
+
+select notes.HADM_ID, diagnoses_icd9.SUBJECT_ID, notes.CHARTDATE, diagnoses_icd9.ICD9_CODES, notes.NOTE_TEXT   
+from 
+(select HADM_ID,max(SUBJECT_ID) , MIN( CHARTDATE) CHARTDATE ,string_agg(TEXT , ' ' ORDER BY CHARTDATE) NOTE_TEXT 
+from noteevents  
+where category = 'Discharge summary'  
+group by HADM_ID ) as notes
+JOIN
+( select HADM_ID, max(SUBJECT_ID) SUBJECT_ID,  string_agg(ICD9_CODE, ' ') ICD9_CODES 
+from diagnoses_icd 
+where SUBSTRING(ICD9_CODE from 1 for 1) != 'V' and SUBSTRING(ICD9_CODE from 1 for 1) != 'E' 
+group by HADM_ID )  as diagnoses_icd9
+ON (notes.HADM_ID = diagnoses_icd9.HADM_ID);
+
+
+CREATE INDEX W266_DISCHARGE_NOTE_ICD9_B_CODES_index 
+ON W266_DISCHARGE_NOTE_ICD9_CODES_B(HADM_ID) ;
