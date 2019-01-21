@@ -65,5 +65,4 @@ remember all relevant information. [Raffel et al. (2016)](https://arxiv.org/abs/
 | --- | --- |
 | Filtering clinical-notes to keep the ones that have been assigned the top common N icd-9 codes (this is a multi-label),  removing any code from the label that is not in the top N | [pipeline/database_selection.py](pipeline/database_selection.py) |
 | Three main methods: (1) Splits input file in training, valiation and test  (2) Replace leaf icd9-code with its grandparent in the first level  (3) Calculates and Diplay F1 scores for a set of possible thresholds| [pipeline/helpers.py](pipeline/helpers.py) |
-| functions necessary to vectorize the ICD labels and text inputs 
-(I didn't implement this module)| [pipeline/vectorization.py](pipeline/vectorization.py) |
+| functions necessary to vectorize the ICD labels and text inputs  (I didn't implement this module, is listed here because it is used by the notebooks I had implemented)| [pipeline/vectorization.py](pipeline/vectorization.py) |
