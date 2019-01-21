@@ -11,6 +11,8 @@ The code was implemented on August 2017, during my graduate studies at the Maste
 
 This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w266FinalReport_ICD_9_Classification.pdf)
 
+(note: code refactoring pending)
+
 ## Main Notebooks
 | Model | Level| N. Records | Epochs | Notebook |
 | --- | --- | --- | --- | --- |
@@ -26,7 +28,7 @@ This is the final project report: [w266FinalReport_ICD_9_Classification.pdf](w26
 | CNN for first-level icd-9 codes in hierarchy | First-Level | 52.6K | - | [pipeline/icd9_cnn_50K_run.ipynb](/pipeline/icd9_cnn_50K_run.ipynb) |
 | CNN-ATT for first-level icd-9 codes in hierarchy | First-Level | 52.6K | - | [pipeline/icd9_cnn_att_50K_records.ipynb](pipeline/icd9_cnn_att_50K_records.ipynb) |
 
-(Note: the different notebooks above would be re-factored as part of 'further work')
+
 
 ## Model Python modules
 
